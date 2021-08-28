@@ -5,33 +5,81 @@
       <mat-card-content>
         <div class="container">
           <mat-form-field>
-            <input matInput placeholder="Name and lastname" required />
+            <input
+              [(ngModel)]="registerData.name"
+              matInput
+              placeholder="Name and lastname"
+              required
+            />
           </mat-form-field>
           <mat-form-field>
-            <input matInput placeholder="Gender" required />
+            <input
+              [(ngModel)]="registerData.gender"
+              matInput
+              placeholder="Gender"
+              required
+            />
           </mat-form-field>
           <mat-form-field>
-            <input type="date" matInput placeholder="Date of birth" required />
+            <input
+              [(ngModel)]="registerData.dateBirth"
+              matInput
+              placeholder="Date of birth"
+              required
+            />
           </mat-form-field>
           <mat-form-field>
-            <input type="number" matInput placeholder="Code" required />
+            <input
+              [(ngModel)]="registerData.code"
+              matInput
+              placeholder="Code"
+              required
+            />
           </mat-form-field>
           <mat-form-field>
-            <input type="email" matInput placeholder="Email" required />
+            <input
+              [(ngModel)]="registerData.email"
+              type="email"
+              matInput
+              placeholder="Email"
+              required
+            />
           </mat-form-field>
           <mat-form-field>
-            <input type="password" matInput placeholder="Password" required />
+            <input
+              [(ngModel)]="registerData.password"
+              type="password"
+              matInput
+              placeholder="Password"
+              required
+            />
           </mat-form-field>
           <mat-form-field>
-            <input type="number" matInput placeholder="Mobil phone" required />
+            <input
+              [(ngModel)]="registerData.mobilePhone"
+              matInput
+              placeholder="Mobile phone"
+              required
+            />
           </mat-form-field>
           <mat-form-field>
-            <input type="text" matInput placeholder="Direction" required />
+            <input
+              [(ngModel)]="registerData.direction"
+              matInput
+              placeholder="Direction"
+              required
+            />
           </mat-form-field>
         </div>
       </mat-card-content>
       <mat-card-actions>
-        <button class="button colorButton" mat-raised-button>Register</button>
+        <button
+          (click)="registerStudent()"
+          class="button colorButton"
+          mat-raised-button
+        >
+          Register
+        </button>
       </mat-card-actions>
     </mat-card>
   </div>

@@ -10,7 +10,7 @@ import { LoginComponent } from './home/login/login.component';
 const routes: Routes = [
   {
     path: '',
-    component: RegisterStudentComponent,
+    component: LoginComponent,
     pathMatch: 'full'
   },
   {
